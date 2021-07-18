@@ -1,0 +1,55 @@
+html, body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #7159c1;
+    
+}
+
+.container{    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+
+    grid-template-areas: "h h"
+                         "m a"
+                         ". d"  
+                                   
+}
+
+header{    
+    background: yellow; 
+    width: 750px; 
+    height: 100px;
+    grid-area: h;
+    
+}
+
+main{
+    background: red; 
+    width: 150px; 
+    height: 150px;     
+    grid-area: m;
+}
+
+aside{
+    background: blue; 
+    width: 450px;  
+    height: 450px;   
+    grid-area: a;
+    
+}
+div{    
+    background:green;
+    width: 150px;
+    height: 150px;    
+    grid-area: d;
+    
+}
+
+item4{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
